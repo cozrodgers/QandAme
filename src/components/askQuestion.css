@@ -1,0 +1,14 @@
+form {
+
+	display: inline-flex;
+
+}
+
+input {
+	width: auto;
+	min-width:400px;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+
