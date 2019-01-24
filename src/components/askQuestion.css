@@ -5,10 +5,15 @@ form {
 }
 
 input {
+	margin: 4px;
 	width: auto;
 	min-width:400px;
 	border-radius: 5px;
 	margin-left: 10px;
 }
 
+button {
 
+	border-radius: 15px;
+	padding: 10px;
+}

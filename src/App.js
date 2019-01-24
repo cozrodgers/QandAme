@@ -6,6 +6,14 @@ import AskQuestion  from './components/askQuestion.js';
 import QuestionView from './components/questionView.js';
 import Item from './components/item.js';
 class App extends Component {
+
+  constructor (props) {
+    super(props);
+    this.state = {
+      term:'',
+      items:[]
+    };
+  }
   render() {
     return (
       <div className="App">
@@ -14,7 +22,7 @@ class App extends Component {
   <Hello/>
 
       <QuestionView/>
-    
+
   <AskQuestion/>
       </div>
 
