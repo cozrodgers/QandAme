@@ -9,16 +9,17 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
 
-      <Hello/>
+
+  <Hello/>
       <AskQuestion/>
       <QuestionView/>
-     
+      <Item/>
+
       </div>
 
 
-     
+
     );
   }
 }

@@ -1,5 +1,6 @@
 .item {
 	list-style-type: none;
+	display: inline-flex;
 }
 
 .item p {
@@ -9,4 +10,8 @@
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 1px;
+}
+
+.item img {
+	height:150px;
 }
