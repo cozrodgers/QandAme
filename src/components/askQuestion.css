@@ -1,6 +1,7 @@
 form {
 
 	display: inline-flex;
+	margin-top: 10px;
 
 }
 
@@ -8,12 +9,18 @@ input {
 	margin: 4px;
 	width: auto;
 	min-width:400px;
-	border-radius: 5px;
+	border-radius: 2px;
 	margin-left: 10px;
+	margin-top: 10px;
 }
 
 button {
+	margin-top: 10px;
+	border-radius: 2px;
+	max-height: 40px;
 
-	border-radius: 15px;
-	padding: 10px;
+}
+
+.inputQ {
+	margin: 15px;
 }

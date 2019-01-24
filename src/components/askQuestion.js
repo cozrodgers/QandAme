@@ -12,7 +12,7 @@ sendMsg(e){
 			<div>
 		<form>
 		<label>Enter your question
-		<input type="text"></input>
+		<input className="inputQ" type="text"></input>
 		 </label>
 		<button type="button" onClick={this.sendMsg.bind(this)}>Ask</button>
 		</form>

@@ -10,10 +10,10 @@ class Item extends Component {
 
 			<div className=''>
 				<li className="item ">
-				<img src="http://flathash.com/150" alt='avatar'/>
+				<img src={"http://flathash.com/" + this.props.img} alt='avatar'/>
 				<p className='bg-light-green grow'> {this.props.type}</p>
 				<p> {this.props.user}</p>
-				<p>{this.props.text}</p>
+				<p className="textReply bg-light-red">{this.props.text}</p>
 			</li>
 			</div>
 )

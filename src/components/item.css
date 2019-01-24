@@ -3,7 +3,7 @@
 	display: inline-flex;
 }
 
-.item p {
+.textReply, .item p {
 	margin: auto;
 	width: 150px;
 	max-width: 350px;
@@ -13,8 +13,13 @@
 	border-width: 1px;
 	border-color: gray;
 	max-height: 50px;
+	overflow-x: scroll;
 }
 
 .item img {
-	height:150px;
+	height:50px;
+}
+
+.textReply {
+padding-left: 20px;
 }
