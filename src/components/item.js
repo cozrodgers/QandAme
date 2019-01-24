@@ -9,7 +9,7 @@ class Item extends Component {
 
 			<div className=''>
 				<li className="item ">
-				<img src="http://flathash.com/150"/>
+				<img src="http://flathash.com/150" alt='avatar'/>
 				<p className='bg-light-green grow'> {this.props.type}</p>
 				<p> {this.props.user}</p>
 				<p>{this.props.text}</p>
