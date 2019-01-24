@@ -12,10 +12,10 @@ class App extends Component {
 
 
   <Hello/>
-      <AskQuestion/>
-      <QuestionView/>
-      <Item/>
 
+      <QuestionView/>
+    
+  <AskQuestion/>
       </div>
 
 
