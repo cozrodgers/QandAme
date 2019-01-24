@@ -1,0 +1,12 @@
+.view  ul{
+overflow-y: scroll;
+height: 400px;
+
+
+}
+
+.view {
+
+  border-style: solid;
+  border-width: 1px;
+}
