@@ -1,13 +1,12 @@
-.view  ul{
-overflow-y: scroll;
-height: 400px;
-
-
+.view ul {
+  overflow-y: scroll;
+  height: 400px;
+  box-shadow: 10px 15px red 4p;
 }
 
 .view {
-height: auto;
-width: auto;
-border-style: solid;
-border-width: 1px;
+  height: auto;
+  width: auto;
+  border-style: solid;
+  border-width: 1px;
 }

@@ -1,25 +1,59 @@
 .item {
-	list-style-type: none;
-	display: inline-flex;
+  list-style-type: none;
+  display: inline-flex;
+  padding: 15px;
 }
 
-.textReply, .item p {
-	margin: auto;
-	width: 150px;
-	max-width: 350px;
-	padding: 6px;
-	border-radius: 2px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: gray;
-	max-height: 50px;
-	overflow-x: scroll;
+.item .user {
+  margin-top: 0;
+  width: 150px;
+  max-width: 300px;
+  max-height: 30px;
+  padding: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: right;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.item .type {
+  margin-top: 0;
+  width: 150px;
+  max-width: 75px;
+  max-height: 30px;
+  padding: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: left;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .item img {
-	height:50px;
+  height: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
-.textReply {
-padding-left: 20px;
+.item .textReply {
+  margin-top: 0;
+  margin-left: 16px;
+  width: 150px;
+  max-width: 300px;
+  padding: 4px;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+  text-align: left;
+  padding: 8px;
+  font-size: 13px;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

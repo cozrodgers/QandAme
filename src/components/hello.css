@@ -1,0 +1,25 @@
+.banner title {
+  text-align: left;
+  color: red;
+  margin: 0;
+  padding: 0px;
+}
+
+.banner h1 {
+  margin-left: 0px;
+  margin-bottom: 3px;
+  margin-top: 0px;
+}
+
+.banner {
+  display: flex;
+}
+
+.banner .menu {
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.subtitle {
+  margin: 0px;
+}

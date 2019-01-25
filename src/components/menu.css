@@ -1,0 +1,16 @@
+.menu-items {
+  margin-bottom: 2px;
+}
+
+.menu-items p {
+  display: inline;
+  margin-right: 10px;
+
+  padding: 15px;
+}
+
+.menu-items img {
+  height: 40px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 10px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
