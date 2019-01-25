@@ -7,7 +7,7 @@
 
 .banner h1 {
   margin-left: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   margin-top: 0px;
   color: white;
   text-shadow: 2px 2px #534949;
@@ -23,5 +23,17 @@
 }
 
 .subtitle {
-  margin: 0px;
+  margin-bottom: 6px;
+  margin-top: 0px;
+}
+
+.time {
+  background-color: white;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  font-family: monospace;
+  color: black;
+  padding: 0px 8px 0px 8px;
+  margin-left: 6px;
 }
