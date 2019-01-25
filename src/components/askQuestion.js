@@ -19,7 +19,7 @@ class AskQuestion extends Component {
             />
           </label>
           <button className="bg-light-blue" type="button">
-            Ask
+            <span>Ask</span>
           </button>
         </form>
       </div>

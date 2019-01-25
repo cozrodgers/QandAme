@@ -7,12 +7,23 @@ input {
   margin-top: 10px;
 }
 
+label {
+  font-family: sans-serif;
+}
+
 button {
   margin-top: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   max-height: 40px;
+  padding: 5px;
+}
+
+span {
+  color: white;
 }
 
 .inputQ {
   margin: 15px;
+  border-radius: 4px;
+  padding: 5px;
 }

@@ -1,7 +1,7 @@
 .view ul {
   overflow-y: scroll;
   height: 400px;
-  box-shadow: 10px 15px red 4p;
+  box-shadow: 10px 15px red 4px;
 }
 
 .view {

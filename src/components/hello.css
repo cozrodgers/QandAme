@@ -6,9 +6,11 @@
 }
 
 .banner h1 {
-  margin-left: 0px;
+  margin-left: 5px;
   margin-bottom: 3px;
   margin-top: 0px;
+  color: white;
+  text-shadow: 2px 2px #534949;
 }
 
 .banner {

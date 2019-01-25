@@ -8,7 +8,11 @@ class Menu extends Component {
         <p>My Sessions</p>
         <p>My Account</p>
         <p>Settings</p>
-        <img className="grow" src="http://flathash.com/random" alt="profile" />
+        <img
+          className="grow bg-white"
+          src="http://flathash.com/random"
+          alt="profile"
+        />
       </div>
     );
   }

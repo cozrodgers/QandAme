@@ -6,7 +6,7 @@ import "./menu.css";
 class Hello extends Component {
   render() {
     return (
-      <div className="banner">
+      <div className="banner bg-light-blue">
         <div className="title">
           <h1>QandAme</h1>
           <p className="subtitle">Ask them anything</p>
