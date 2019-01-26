@@ -16,10 +16,11 @@ class Item extends Component {
           <img src={"http://flathash.com/" + this.props.img} alt="avatar" />
           <p className="type bg-light-green grow"> {this.props.type}</p>
           <p className="user"> {this.props.user}</p>
-          <p className="textReply bg-light-red">
+          <p className="textReply bg-light-red ">
             {this.props.text}{" "}
             <span className="date">{day + "/" + month + "/" + year}</span>
           </p>
+          <i className="" />
         </li>
       </div>
     );
