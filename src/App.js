@@ -6,22 +6,34 @@ import AskQuestion from "./components/askQuestion.js";
 import QuestionView from "./components/questionView.js";
 import Item from "./components/item.js";
 import Menu from "./components/menu.js";
+import mockItems from './items'
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      items: []
-    };
+  constructor(){
+    super()
+    this.state = {items : []}
   }
+
+  componentWillMount(){
+    this.setState({items:mockItems})
+  }
+
+  handleAddItem(item) {
+    let items = this.state.items;
+    items.push(item)
+    this.setState({items: items})
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <Hello />
 
-        <QuestionView />
+        <QuestionView itemlist = {this.state.items}/>
 
-        <AskQuestion />
+        <AskQuestion addItem = {this.handleAddItem.bind(this)}/>
       </div>
     );
   }
