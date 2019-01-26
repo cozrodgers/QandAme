@@ -10,9 +10,10 @@ class QuestionView extends Component {
   })
     return (
       <div className="view">
-
         <ul>
-          {listItems}
+          <div className="view-items">
+            {listItems}
+          </div>
         </ul>
       </div>
     );

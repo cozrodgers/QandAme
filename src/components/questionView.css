@@ -2,6 +2,9 @@
   overflow-y: scroll;
   height: 400px;
   box-shadow: 10px 15px red 4px;
+  margin: 4px;
+
+  outline-color: yellow;
 }
 
 .view {
@@ -9,4 +12,8 @@
   width: auto;
   border-style: solid;
   border-width: 1px;
+}
+
+.view-items {
+  width: 500px;
 }
