@@ -19,8 +19,21 @@ class Item extends Component {
           <p className="textReply bg-light-red ">
             {this.props.text}{" "}
             <span className="date">{day + "/" + month + "/" + year}</span>
+            <span className="voting">
+              <input
+                className="voteUp"
+                size="12"
+                type="button"
+                value="Vote up"
+              />
+              <input
+                className="voteDwn"
+                size="30"
+                type="button"
+                value="Vote down"
+              />
+            </span>
           </p>
-          <i className="" />
         </li>
       </div>
     );
