@@ -1,39 +1,40 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Hello from "./components/hello.js";
 import AskQuestion from "./components/askQuestion.js";
 import QuestionView from "./components/questionView.js";
 import Item from "./components/item.js";
 import Menu from "./components/menu.js";
-import mockItems from './items'
+import Footer from "./components/footer.js";
+import Lobby from "./components/lobby.js";
+import mockItems from "./items";
 
 class App extends Component {
-  constructor(){
-    super()
-    this.state = {items : []}
+  constructor() {
+    super();
+    this.state = { items: [] };
   }
 
-  componentWillMount(){
-    this.setState({items:mockItems})
+  componentWillMount() {
+    this.setState({ items: mockItems });
   }
 
   handleAddItem(item) {
     let items = this.state.items;
-    items.push(item)
-    this.setState({items: items})
+    items.push(item);
+    this.setState({ items: items });
   }
-
-
 
   render() {
     return (
       <div className="App">
         <Hello />
+        <Lobby />
+        <QuestionView itemlist={this.state.items} />
 
-        <QuestionView itemlist = {this.state.items}/>
+        <AskQuestion addItem={this.handleAddItem.bind(this)} />
 
-        <AskQuestion addItem = {this.handleAddItem.bind(this)}/>
+        <Footer />
       </div>
     );
   }

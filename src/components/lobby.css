@@ -1,0 +1,59 @@
+@import url(./App.js);
+
+.sidenav {
+  height: 84.1%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: ;
+  background-color: rgb(177, 231, 146);
+  border-left: black 1px;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+h2 {
+  color: black;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 0px;
+  text-decoration: none;
+  font-size: 12px;
+  color: #000000;
+  display: inline-flex;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav:hover {
+  left: 0px;
+  transition: 0.6s;
+  visibility: visible;
+}
+.sidenav:not(:hover) {
+  left: -160px;
+  transition: 0.4s;
+}
+
+.sidenav:hover .App {
+  background-color: rgb(197, 19, 19);
+}
+
+.tab {
+  color: white;
+  border: solid 1px black;
+  position: absolute;
+  padding: 3px 3px 3px 3px;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  top: 50%;
+  left: 160px;
+  text-align: center;
+  background-color: rgb(240, 86, 86);
+  font-family: sans-serif;
+}

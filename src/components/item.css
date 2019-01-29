@@ -63,3 +63,12 @@
   font-size: 8px;
   font-family: monospace;
 }
+.voting {
+  display: grid;
+  align-items: center;
+  width: 10px;
+}
+
+input[type="button"] {
+  width: auto;
+}
