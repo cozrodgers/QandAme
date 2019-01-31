@@ -20,18 +20,12 @@ class Item extends Component {
             {this.props.text}{" "}
             <span className="date">{day + "/" + month + "/" + year}</span>
             <span className="voting">
-              <input
+              <button
                 className="voteUp"
-                size="12"
-                type="button"
-                value="Vote up"
-              />
-              <input
+              > voteUp</button>
+              <button
                 className="voteDwn"
-                size="30"
-                type="button"
-                value="Vote down"
-              />
+              > voteDwn</button>
             </span>
           </p>
         </li>

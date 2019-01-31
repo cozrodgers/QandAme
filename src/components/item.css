@@ -63,12 +63,20 @@
   font-size: 8px;
   font-family: monospace;
 }
-.voting {
-  display: grid;
-  align-items: center;
-  width: 10px;
+.voting button {
+  /*display: grid;
+  align-items: center;*/
+  width: 26px;
+  height: 26px;
+  padding: 0px 5px;
+  margin: 4px;
+  text-align: center;
+  /*box-sizing: border-box;*/
+  border: 0;
+  float: right;
+  width: auto;
+
+
 }
 
-input[type="button"] {
-  width: auto;
-}
+
