@@ -86,7 +86,7 @@ const mockItems = [
   {
     type: "answer",
     user: "Luke",
-    text: "Ssssss",
+    text: "desgasten",
     img: "172"
   },
 
@@ -99,7 +99,7 @@ const mockItems = [
 
   {
     type: "answer",
-    user: "Luke",
+    user: "Liake",
     text: "lmao",
     img: "15"
   }
