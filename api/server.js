@@ -1,7 +1,7 @@
 // require modules
 const express = require('express');
 const app = express();
-const items = require('./items.js');
+const items = require('./items');
 
 //call the instance and use the get function of the instance
 app.get('/', function (req, res) {

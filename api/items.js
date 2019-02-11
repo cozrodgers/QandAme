@@ -105,4 +105,4 @@ const mockItems = [
   }
 ];
 
-exports.mockItems;
+module.exports = mockItems;

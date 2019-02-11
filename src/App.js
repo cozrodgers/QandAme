@@ -6,17 +6,24 @@ import QuestionView from "./components/questionView.js";
 import Item from "./components/item.js";
 import Menu from "./components/menu.js";
 import Footer from "./components/footer.js";
-import mockItems from "./items";
+//import mockItems from "./items";
 
 class App extends Component {
   constructor() {
     super();
-    this.state = { items: [] };
+    this.state = { 
+      items: [],
+    };
   }
 
-  componentWillMount() {
-    this.setState({ items: mockItems });
+  componentwillMount() {
+    fetch('localhost:8084')
+      .then(response => response.json())
+      .then(data => this.setState({ items: data }))
   }
+  // componentWillMount() {
+  //   this.setState({ items: mockItems });
+  // }
 
   handleAddItem(item) {
     let items = this.state.items;
@@ -25,6 +32,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.items)
     return (
       <div className="App">
         <Hello />
