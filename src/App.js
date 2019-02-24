@@ -6,7 +6,7 @@ import QuestionView from "./components/questionView.js";
 import Item from "./components/item.js";
 import Menu from "./components/menu.js";
 import Footer from "./components/footer.js";
-import mockItems from "./items";
+
 
 class App extends Component {
   constructor() {
@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.setState({ items: mockItems });
+    this.setState({ items:'' });
   }
 
   handleAddItem(item) {
