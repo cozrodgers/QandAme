@@ -7,16 +7,20 @@ import Item from "./components/item.js";
 import Menu from "./components/menu.js";
 import Footer from "./components/footer.js";
 
-
 class App extends Component {
   constructor() {
     super();
-    this.state = { items: [] };
+    this.state = { 
+      items: [],
+    };
   }
 
   componentWillMount() {
     this.setState({ items:'' });
   }
+  // componentWillMount() {
+  //   this.setState({ items: mockItems });
+  // }
 
   handleAddItem(item) {
     let items = this.state.items;
@@ -25,6 +29,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.items)
     return (
       <div className="App">
         <Hello />

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import Item from "./item.js";
 import "./questionView.css";
 
@@ -20,6 +20,7 @@ componentDidUpdate() {
 }
 
   render() {
+     
       const listItems = this.props.itemlist.map(item => {    
         return <Item type={item.type} user={item.user} text={item.text} img={item.img}/>
   })
@@ -41,4 +42,4 @@ componentDidUpdate() {
     );
   }
 }
-export default QuestionView;
+export default QuestionView
