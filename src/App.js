@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentWillMount() {
-    this.setState({ items:'' });
+    this.setState({ items: []});
   }
   // componentWillMount() {
   //   this.setState({ items: mockItems });
