@@ -6,8 +6,11 @@ import QuestionView from "./components/questionView.js";
 import Item from "./components/item.js";
 import Menu from "./components/menu.js";
 import Footer from "./components/footer.js";
-
+import axios from 'axios';
 class App extends Component {
+
+
+
   constructor() {
     super();
     this.state = { 
@@ -15,9 +18,23 @@ class App extends Component {
     };
   }
 
-  componentWillMount() {
-    this.setState({ items: []});
+  fetchItems = () => {
+      axios.get("http://localhost:8085")
+        .then(result => this.setState({items: result.data}))
+        .catch(e => console.log(e));
+    }
+
+
+  
+  componentDidMount(){
+    this.fetchItems();
+    //console.log(this.items)
   }
+  // componentWillMount() {
+  //   this.setState({ items: []});
+  // }
+
+
   // componentWillMount() {
   //   this.setState({ items: mockItems });
   // }
@@ -34,7 +51,7 @@ class App extends Component {
       <div className="App">
         <Hello />
 
-        <QuestionView itemlist={this.state.items} />
+        <QuestionView itemList={this.state.items} />
 
         <AskQuestion addItem={this.handleAddItem.bind(this)} />
 

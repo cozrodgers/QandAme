@@ -1,6 +1,13 @@
 // require modules
 const express = require('express');
+
+
 const app = express();
+
+
+// var cors = require('cors');
+// app.use(cors());
+
 const items = require('./items');
 
 //call the instance and use the get function of the instance
