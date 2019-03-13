@@ -38,6 +38,34 @@ app.put('/items/:itemId', update); //change an item contents based on it sid
 
 app.delete('/items/:itemId', deleteItem); //delete an item based on its id
 
+// call functions here and add the logic
+
+
+function create(req, res){
+
+};
+
+
+function findAll(req, res){
+
+};
+
+
+function findOne(req, res){
+
+};
+
+
+function update(req, res){
+
+};
+
+
+function deleteItem(req, res){
+
+};
+
+
 
 //listen on port 8080
 app.listen(process.env.PORT || 8085);
