@@ -1,11 +1,13 @@
 const mockItems = [
   {
+    id:1,
     type: "answer",
     user: "Corey",
     text: "Awesome!",
     img: "1"
   },
   {
+    id:2,
     type: "question",
     user: "Sam",
     text: "Hello what is your favourite color",
@@ -13,6 +15,7 @@ const mockItems = [
   },
 
   {
+    id:3,
     type: "answer",
     user: "John",
     text:
@@ -21,6 +24,7 @@ const mockItems = [
   },
 
   {
+    id:4,
     type: "answer",
     user: "Taylor",
     text: "and Green",
@@ -28,6 +32,7 @@ const mockItems = [
   },
 
   {
+    id:5,
     type: "answer",
     user: "Brigita",
     text: "Yellow",
@@ -35,6 +40,7 @@ const mockItems = [
   },
 
   {
+    id:6,
     type: "answer",
     user: "James",
     text: "Eat",
@@ -42,6 +48,7 @@ const mockItems = [
   },
 
   {
+    id:7,
     type: "answer",
     user: "Mat",
     text: "Lmao",
@@ -49,6 +56,7 @@ const mockItems = [
   },
 
   {
+    id:8,
     type: "answer",
     user: "Simon",
     text: "Shh",
@@ -56,6 +64,7 @@ const mockItems = [
   },
 
   {
+    id:9,
     type: "answer",
     user: "Will",
     text: ":)",
@@ -63,6 +72,7 @@ const mockItems = [
   },
 
   {
+    id:10,
     type: "answer",
     user: "Jen",
     text: "Hello",
@@ -70,6 +80,7 @@ const mockItems = [
   },
 
   {
+    id:11,
     type: "answer",
     user: "Tony",
     text: "Hi guys",
@@ -77,6 +88,7 @@ const mockItems = [
   },
 
   {
+    id:12,
     type: "answer",
     user: "Luke",
     text: "Ssssss",
@@ -84,6 +96,7 @@ const mockItems = [
   },
 
   {
+    id:13,
     type: "answer",
     user: "Luke",
     text: "Ssssss",
@@ -91,6 +104,7 @@ const mockItems = [
   },
 
   {
+    id:14,
     type: "answer",
     user: "Luke",
     text: "Ssssss",
@@ -98,6 +112,7 @@ const mockItems = [
   },
 
   {
+    id:15,
     type: "answer",
     user: "Luke",
     text: "lmao",

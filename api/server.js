@@ -1,12 +1,16 @@
 // require modules
 const express = require('express');
-
+const bodyParser = require('body-parser');
 
 const app = express();
 
 //require cors
 var cors = require('cors');
 app.use(cors());
+
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 const items = require('./items');
 
