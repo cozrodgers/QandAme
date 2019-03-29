@@ -28,10 +28,10 @@ res.setHeader('Content-Type', 'application/json');
 
 //start endpoints here 
 
-app.post('/items', create); //create a new item in /items
+app.post('/create', create); //create a new item in /items
 
 
-app.get('/items', findAll); //retrieve all items from items
+app.get('/findAll', findAll); //retrieve all items from items
 
 
 app.get('/items/:itemId', findOne); //retrieve a single item based on its id
@@ -47,10 +47,33 @@ app.delete('/items/:itemId', deleteItem); //delete an item based on its id
 
 function create(req, res){
 
+
+//make new obj to pass to the items.js
+const item = {
+   	id: items.length + 1,
+    type: req.body.type,
+    user: req.body.user,
+    text: req.body.text,
+    img: req.body.img
+ }
+
+
+ items.push(item);
+ return res.status(201).send({
+   success: 'true',
+   message: 'item added successfully'
+ })
+
 };
 
 
 function findAll(req, res){
+
+	return res.status(200).send({
+        success: 'true',
+        message: 'items retrieved successfully',
+        items,
+      });
 
 };
 
