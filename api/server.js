@@ -80,6 +80,7 @@ function findAll(req, res){
 
 function findOne(req, res){
 	const id = parseInt(req.params.id, 10);
+	console.log(id);
   	items.map(function(item){
     if (item.id === id){
       return res.status(200).send({
