@@ -79,13 +79,8 @@ function findAll(req, res){
 
 
 function findOne(req, res){
-
-items.map(function(item){
-
-
-
-	 const id = parseInt(req.params.id, 10);
-  items.map(function(item){
+	const id = parseInt(req.params.id, 10);
+  	items.map(function(item){
     if (item.id === id){
       return res.status(200).send({
         success: 'true',
@@ -93,11 +88,11 @@ items.map(function(item){
         item,
       });
     } 
-});
- return res.status(404).send({
-   success: 'false',
-   message: 'item does not exist',
-  });
+	});
+ 	return res.status(404).send({
+   		success: 'false',
+   		message: 'item does not exist',
+  	});
 
 }
 
