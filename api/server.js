@@ -28,10 +28,10 @@ res.setHeader('Content-Type', 'application/json');
 
 //start endpoints here 
 
-app.post('/create', create); //create a new item in /items
+app.post('/items', create); //create a new item in /items
 
 
-app.get('/findAll', findAll); //retrieve all items from items
+app.get('/items', findAll); //retrieve all items from items
 
 
 app.get('/items/:itemId', findOne); //retrieve a single item based on its id
@@ -80,7 +80,22 @@ function findAll(req, res){
 
 function findOne(req, res){
 
-};
+items.map(function(item){
+    if (item.id === req.params.id) {
+      return res.status(200).send({
+        success: 'true',
+        message: 'item retrieved successfully',
+        item,
+      });
+    } 
+});
+ return res.status(404).send({
+   success: 'false',
+   message: 'item does not exist',
+  });
+
+
+  
 
 
 function update(req, res){
