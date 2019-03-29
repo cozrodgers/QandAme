@@ -79,7 +79,7 @@ function findAll(req, res){
 
 
 function findOne(req, res){
-	const id = parseInt(req.params.id, 10);
+	const id = parseInt(req.params.itemId, 10);
 	console.log(id);
   	items.map(function(item){
     if (item.id === id){
