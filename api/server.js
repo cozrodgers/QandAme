@@ -81,15 +81,18 @@ function findAll(req, res){
 function findOne(req, res){
 	const id = parseInt(req.params.itemId, 10);
 	console.log(id);
+	//applying a function to every element in the items array
   	items.map(function(item){
+    //checking if the id that was sent in the url matchs an item id
     if (item.id === id){
+      //sending back the Ok status code and a message of successed 
       return res.status(200).send({
         success: 'true',
         message: 'item retrieved successfully',
-        item,
+        item,//sending back the matched item then quiting the function
       });
     } 
-	});
+	});//if no item matched send notfound status code with a message
  	return res.status(404).send({
    		success: 'false',
    		message: 'item does not exist',
