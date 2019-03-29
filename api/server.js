@@ -81,7 +81,12 @@ function findAll(req, res){
 function findOne(req, res){
 
 items.map(function(item){
-    if (item.id === req.params.id) {
+
+
+
+	 const id = parseInt(req.params.id, 10);
+  items.map(function(item){
+    if (item.id === id){
       return res.status(200).send({
         success: 'true',
         message: 'item retrieved successfully',
