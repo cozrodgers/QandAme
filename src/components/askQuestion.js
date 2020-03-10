@@ -1,19 +1,17 @@
 import React, { Component } from "react";
 import "./askQuestion.css";
 import "./tachyons.min.css";
+
 class AskQuestion extends Component {
   constructor() {
     super();
     this.state = {
-      // define newMessage object to store values from new item (type, msg, img etc)
       newItem: {}
     };
   }
 
-  //onClick : get the values from the text input
   onClick() {
     if (this.textInput.value) {
-      //On click if the text input value has the following values
       this.setState(
         {
           newItem: {
@@ -23,18 +21,11 @@ class AskQuestion extends Component {
             text: this.textInput.value
           }
         },
-
-        //create function and use add item function to push item to the questionview state
         () => {
           this.props.addItem(this.state.newItem);
         }
       );
-
-      //clear the text input once post has been completed
       this.textInput.value = "";
-      /* add auto scroll*/
-
-      //function to manage autoscroll
     }
   }
 

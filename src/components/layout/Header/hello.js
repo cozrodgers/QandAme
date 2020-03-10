@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import Menu from "./menu.js";
+import Menu from "../Menu_Items/menu.js/index.js.js";
 import "./hello.css";
 import "./menu.css";
 
 //add time functions
-
 var currentTime = new Date(),
   hour = currentTime.getHours(),
   mins = currentTime.getMinutes();
