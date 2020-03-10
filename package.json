@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "^2.1.8"
+    "react-router": "*",
+    "react-router-dom": "*",
+    "react-scripts": "^2.1.8",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

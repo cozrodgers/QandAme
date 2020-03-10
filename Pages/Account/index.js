@@ -3,37 +3,30 @@ import "./App.css";
 import Hello from "./components/hello.js";
 import AskQuestion from "./components/askQuestion.js";
 import QuestionView from "./components/questionView.js";
-import Item from "./components/item.js";
-import Menu from "./components/menu.js";
 import Footer from "./components/footer.js";
-import axios from 'axios';
+import axios from "axios";
 class App extends Component {
-
-
-
   constructor() {
     super();
-    this.state = { 
-      items: [],
+    this.state = {
+      items: []
     };
   }
 
   fetchItems = () => {
-      axios.get("http://localhost:8085")
-        .then(result => this.setState({items: result.data}))
-        .catch(e => console.log(e));
-    }
+    axios
+      .get("http://localhost:8085")
+      .then(result => this.setState({ items: result.data }))
+      .catch(e => console.log(e));
+  };
 
-
-  
-  componentDidMount(){
+  componentDidMount() {
     this.fetchItems();
     //console.log(this.items)
   }
   // componentWillMount() {
   //   this.setState({ items: []});
   // }
-
 
   // componentWillMount() {
   //   this.setState({ items: mockItems });
@@ -46,7 +39,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.items)
+    console.log(this.state.items);
     return (
       <div className="App">
         <Hello />
