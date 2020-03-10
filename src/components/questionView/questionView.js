@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Item from "./item.js";
+import Item from "../questionItem/item.js";
 import "./questionView.css";
 
 class QuestionView extends Component {

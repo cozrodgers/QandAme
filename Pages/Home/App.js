@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import Hello from "./components/hello.js";
-import AskQuestion from "./components/askQuestion.js";
-import QuestionView from "./components/questionView.js";
-import Footer from "./components/footer.js";
+import Hello from "../../src/components/hello.js";
+import AskQuestion from "../../src/components/questionInput/askQuestion.js/index.js";
+import QuestionView from "../../src/components/questionView/questionView.js/index.js.js";
+import Footer from "../../src/components/footer.js";
 import axios from "axios";
 class App extends Component {
   constructor() {
