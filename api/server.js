@@ -62,7 +62,7 @@ function findOne(req, res) {
   const id = parseInt(req.params.itemId, 10);
   console.log(id);
   //applying a function to every element in the items array
-  items.map(item => {
+  items.map(function(item) {
     //checking if the id that was sent in the url matchs an item id
     if (item.id === id) {
       //sending back the Ok status code and a message of successed

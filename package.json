@@ -9,7 +9,10 @@
     "express": "^4.16.4",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "^2.1.8"
+    "react-router": "*",
+    "react-router-dom": "*",
+    "react-scripts": "^2.1.8",
+    "styled-components": "^5.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
