@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./item.css";
-import "./tachyons.min.css";
-
+import "../tachyons.min.css";
 //add date functions
 var currentDate = new Date(),
   day = currentDate.getDate(),

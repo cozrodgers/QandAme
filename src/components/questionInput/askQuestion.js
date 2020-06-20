@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./askQuestion.css";
-import "./tachyons.min.css";
+import "../tachyons.min.css"
 
 class AskQuestion extends Component {
   constructor() {

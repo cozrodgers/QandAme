@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./footer.css";
-import "./tachyons.min.css";
+import "../../tachyons.min.css"; 
 
 class Footer extends Component {
   render() {

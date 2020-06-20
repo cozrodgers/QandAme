@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import "./tachyons.min.css";
 
+import "./menu.css"
+import "../../tachyons.min.css";
 class Menu extends Component {
   render() {
     return (

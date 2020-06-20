@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import Menu from "../Menu_Items/menu.js/index.js.js";
+import Menu from "../Menu_Items/menu.js";
 import "./hello.css";
-import "./menu.css";
+//import "./menu.css"; why this imported here? I guess it should be imported on the menu component only 
 
 //add time functions
 var currentTime = new Date(),
